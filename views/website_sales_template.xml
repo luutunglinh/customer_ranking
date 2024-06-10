@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+        <template id="modify_code_form" inherit_id="website_sale_loyalty.modify_code_form" name="Loyalty, coupon, gift card">
+        <xpath expr="//div[@t-if='program.portal_visible']/t[2]/span[2]" position="after">
+            <t t-elif="program.program_type == 'loyalty' and program.is_rank"/>
+        </xpath>
+    </template>
+</odoo>
